@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0;
+    max-width: 800px;
 
 
 }
@@ -73,7 +74,7 @@ nav ul li a{
 
     align-items: center;
     display: block;
-    width: 400px;
+    max-width: 200px;
 
 
     font-family: Montserrat, Arial, Helvetica, sans-serif;

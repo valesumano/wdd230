@@ -9,7 +9,7 @@ body {
 /* phone or baseline views **************************/
 main {
     color: #444445;
-	max-width: 800px;
+	max-width: 1500px;
 	margin: 2em 2em;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -19,15 +19,14 @@ main {
 
 
 main section {
-	margin: 0.5rem;
-	border: 1px solid #bbb;
-	padding: 0 1rem;
-	background-color: #eee;
+	margin: 0.5em;
+	
 }
 
 
 img{
-    width:300px;
+    max-width: 400px;
+	
 }
 
 
@@ -49,60 +48,39 @@ img{
     box-shadow: 2px 6px 10px rgb(200,200,200);
 }
 
-/* Tablet Views ******************************/
-@media only screen and (min-width: 30em) {
+/* Phone View ******************************/
+@media only screen and (min-width: 20em) {
 	main {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
+	} img {
+		width: 200px;
+		width: 95%;
+	}
 	}
 
-	main .principle1 {
-		display: block;
-	}
 
-	main .principle2 {
-		grid-column: span 2;
-	}
+/* Tablet View ******************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 2fr 2fr;
+		align-items: center;
 
-	main section picture {
-		display: block;
 	}
-	main section picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
+	img {
+		max-width: 400px;
+		width: 95%;
 	}
 }
 
-/* Desktop Views ****************************/
-@media only screen and (min-width: 50em) {
+/* Desktop View ****************************/
+@media only screen and (min-width: 80em) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
 	}
 
-
-main {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-main .principle1 {
-    display: block;
-}
-
-main .principle2 {
-    grid-column: span 2;
-}
-
-main .principle3 {
-    grid-column: span 3;
-}
-
-main section picture {
-    display: block;
-}
-main section picture img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #bbb;
-}
-
+	img {
+		max-width: 500px;
+		width: 95%;
+	}
 }
