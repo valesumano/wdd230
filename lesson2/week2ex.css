@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media only screen and (min-width: 37.5em);
+
+body {
+	font-size: 16px;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+    
+}
+/* phone or baseline views **************************/
+main {
+    color: #444445;
+	max-width: 800px;
+	margin: 2em 2em;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
+}
+
+
+img{
+    width:300px;
+}
+
+
+.btn{
+
+    align-items: center;
+    display: block;
+    width: 150px;
+
+    margin-top: 10px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background: linear-gradient(90deg, #6fabd8, #60788d);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    box-shadow: 2px 6px 10px rgb(200,200,200);
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 30em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main .principle1 {
+		display: block;
+	}
+
+	main .principle2 {
+		grid-column: span 2;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 50em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .principle1 {
+    display: block;
+}
+
+main .principle2 {
+    grid-column: span 2;
+}
+
+main .principle3 {
+    grid-column: span 3;
+}
+
+main section picture {
+    display: block;
+}
+main section picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bbb;
+}
+
+}
