@@ -1,1 +1,4 @@
-document.querySelector('#©').textContent = new Date(Date.now()).getFullYear();
+let date = new Date();
+let year = date.getFullYear();
+
+document.querySelector('#year').innerHTML = '&copy;' + year;
