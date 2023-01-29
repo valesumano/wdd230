@@ -1,0 +1,42 @@
+.newstyle {
+    background-color: burlywood;
+}
+
+/* hamburger menu / responsive menu */
+
+nav{
+    display: flex;
+    flex-direction: column;
+    font-family: helvetica, sans-serif;
+    position: absolute;
+}
+a {
+    display: none;
+    padding: 15px;
+    text-decoration: none;
+    color: goldenrod
+}
+
+a:first-child {
+    display:block;
+    text-decoration: none;
+    font-size: 3em;
+    color: goldenrod;
+}
+.responsive a{
+    display: block;
+}
+
+
+
+@media screen and (min-width: 600px){
+    a:first-child{
+        display: none;
+    }
+    a{
+        display: block;
+    }
+    nav {
+        flex-direction: row;
+    }
+}
