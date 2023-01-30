@@ -7,6 +7,7 @@ header {
 	max-width: 1200px;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
+
 }
 
 .logo {
@@ -17,7 +18,7 @@ header {
 }
 
 nav a:hover {
-   
+    
 	background-color: #16a6e1;
     transition: all .5s ease;
     width: 100px;
@@ -36,7 +37,6 @@ nav ul li{
     padding: 1em;
     
 }
-
 
 a {
     text-decoration: none;
@@ -68,14 +68,34 @@ aside {
     font-size: 12px;
 }
 
+footer{
+    background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 1rem 1rem;
+	border-top: 1px solid #bbb;
+    align-items: center;
+    
+}
 
-
-
+#merida{
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
 
 
 
 
  /* small view */
+ @media (max-width: 750px) {
+    .menu{
+        display:none;
+    }
+ }
 
 main{
     padding: 40px;
@@ -95,24 +115,18 @@ main div {
 .ham{
     display: block;
 }
-.menu{
-    display:none;
-}
+
 .responsive, a {
     display: block;
 }
 
 
 
-@media (max-width: 800px) {
-   
-}
-
  /* medium view */
 
- @media (min-width: 600px) {
+ @media (min-width: 750px) {
     nav ul li{
-        display: block;
+        display: flex;
     }
 
     main{
@@ -155,6 +169,9 @@ main div {
     #weather{
         grid-column: 2.5/3;
     }
+    .ham{
+        display: none;
+    }
  }
 
   /* large view */
@@ -173,7 +190,6 @@ main div {
 
     .ham {
         display:none;
-        text-decoration: none;
     }
 
     #event{
