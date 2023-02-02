@@ -27,3 +27,14 @@ let currentdate = document.lastModified;
 console.log(currentdate);
 
 document.querySelector('.updated').textContent = currentdate;
+
+
+//Banner
+
+let fulldate = new Date();
+let weekday =date.getDay();
+if (weekday == 1|| weekday == 2){
+    show
+}
+
+
