@@ -55,6 +55,11 @@ body {
     color: #243579;
 }
 
+.welcome{
+  position: relative;
+  top: -220px;
+  left: 30px;
+}
 
 .social img{
     height: 32px;
