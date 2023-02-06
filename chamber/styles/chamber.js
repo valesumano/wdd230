@@ -18,45 +18,19 @@ hambutton.addEventListener('click', () => {
 })
 
 
-
-let date = new Date();
-let year = date.getFullYear();
-
-document.querySelector('.year').innerHTML = '&copy;' + year;
-
-let currentdate = document.lastModified;
-console.log(currentdate);
-
-document.querySelector('.updated').textContent = currentdate;
-
-
 //Banner
 
-// let fulldate = new Date();
+const date = new Date();
+const dayOfWeek = date.getDay();
+const banner = document.querySelector('.banner');
+
+if(dayOfWeek === 1 || dayOfWeek === 2){
+    banner.style.display = 'block';
+
+} 
+else {
+    banner.style.display = 'none';
+}
 
 
-// let weekday =date.getDay();
-// if (weekday == 1|| weekday == 7){
-//     show.innerHTML= `<p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>`;
-// }
-
-
-
-
-// var weekday = new Array(7)
-
-// weekday[0] = "spectacular Sunday"
-// weekday[1] = "marvelous Monday"
-// weekday[2] = "terrific Tuesday"
-// weekday[3] = "wonderful Wednesday"
-// weekday[4] = "totally cool Thursday"
-// weekday[5] = "fantastic Friday"
-// weekday[6] = "sweet Saturday"
-
-// var currentDate = new Date()
-// weekdayValue = currentDate.getDay()
-
-// document.write(
-//     '<p>Have a ' + weekday[weekdayValue] + '!</p>'
-//   )
 
