@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <img src="images/merida_logo.jpeg" class="logo" alt="Logo Merida">
+        <img src="images/merida_logo.webp" class="logo" alt="Logo Merida">
         <nav id="nav">
             <ul>
                 <a class="ham" href="#">&#9776;</a>
@@ -45,7 +45,13 @@
         
         <!-- <p>Have a great day!</p> -->
         <div id="hero">
-            <img id="merida" src="images/monumento.jpg" alt="monumento en merida">
+            <picture class="photo">
+                <source id="merida" srcset="images/Monumento/Small-03.jpg" media= (max-width: 400px)>
+                <source id="merida" srcset="images/Monumento/Medium-02.jpg" media= (max-width: 750px)>
+                <source id="merida" srcset="images/Monumento/Large-01.jpg" media= (max-width: 1000px)>
+            
+                <img id="merida" src="images/Monumento/Large-01.jpg" alt="monumento en merida">
+        </picture>
             <h3 class="welcome">Welcome to Merida</h3>
             <a href="" class="btn">Join the Chamber</a>
         </div>
@@ -53,22 +59,22 @@
             <h3>MATISSE</h3>
             <p>Come to the olympus cultural center, captivate yourself with the works of the master of color.</p>
             <a href="" class="btn">merida.gob.mx/cultura</a>
-            <img src="images/matisse.png" class="matisse" alt="matisse event"></img>
+            <img src="images/matisse.png" class="matisse" alt="matisse event">
         </div>
         </div>
         <div id="weather">
             <h3>Weather</h3>
-            <p>33 C </p>
-            <p>Partly Cloudy</p>
-            <img src="images/weather.png" class="clouds" alt="cloudy icon"></img>
-            <p>Wind Speed: 2.5 km/h</p>
-            <p>Wind Chill: N/A</p>
+            <p class="temp"><span class="t">33</span>&#176;F </p>
+            <p class="desc">Partly Cloudy</p>
+            <img src="images/weather.png" class="clouds" alt="cloudy icon">
+            <p>Wind Speed: <span class="ws">2.5</span>km/h</p>
+            <p>Wind Chill: <span class="wc">N/A</span></p>
 
         </div>
         <div id="newrel">
             <h3>News Release</h3>
             <p>Migrants | Fauna | Local businesses</p>
-            <img src="images/visitmerida.svg" class="visitmerida" alt="visit merida.mx logo"></img>
+            <img src="images/visitmerida.svg" class="visitmerida" alt="visit merida.mx logo">
             <a href="" class="btn">visitmerida.mx</a>
         </div>
         <div id="spotlight">
