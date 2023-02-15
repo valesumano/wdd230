@@ -46,5 +46,11 @@ if (temp <= 50 && ws >= 3) {
 }
 
 
+//storage local and session
+
+localStorage.setItem('name', 'Valentina Sumano - Permanent');
+sessionStorage.setItem('class', 'WDD230 - not permanent');
+
+
 
 
