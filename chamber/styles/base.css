@@ -10,6 +10,12 @@ header {
 
 }
 
+.gallery{
+    max-width: 300px;
+    align-items: center;
+}
+
+
 .active a{
     display: block;
 }
@@ -198,6 +204,10 @@ main div {
         display: flex;
     }
 
+    .gallery:hover{
+        box-shadow: 0 0 50px #333;
+    }
+
     main{
         display:grid;
         grid-template-columns: 2fr 1fr;
@@ -260,6 +270,10 @@ main div {
         grid-template-rows: auto auto auto auto auto;
     }
 
+    .gallery:hover{
+        box-shadow: 0 0 50px #333;
+    }
+    
     footer{
         align-items: center;
     }
