@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <link rel="icon" href="favicon.png">
+    <meta name="description" content="WDD 230 Chamber of Commerce">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/join.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <img src="images/merida_logo.webp" class="logo" alt="Logo Merida">
+        <nav id="nav">
+            <ul>
+                <a class="ham" href="#">&#9776;</a>
+                <li><a class="menu" href="chamber_index.html">Home</a></li>
+                <li><a class="menu" href="discover.html">Discover</a></li>
+                <li><a class="menu" href="">Directory</a></li>
+                <li><a class="menu" href="join.html">Join</a></li>
+                <li><a class="menu" href="">Contact</a></li>
+                
+            </ul>
+        
+        </nav>
+        
+        <div class="social">
+            <img src="images/facebook.png" class="facebook" alt="facebook icon">
+            <img src="images/twitter.png" class="twitter" alt="twitter icon">
+            <img src="images/instagram.png" class="instagram" alt="instagram icon">
+        </div>
+
+        
+    </header>
+
+   <h1>Join our Chamber</h1>
+
+    <main id="join_content">
+        <form method="get" action="thankyou.html">
+            <label for="fname">First Name *:</label>
+            <input id="fname" name="firstname" required>
+            <label for="lname">Last Name *:</label>
+            <input id="lname" name="lastname" required>
+
+            <label for="title">Business Position Title</label>
+            <span>Only letters, dashes and spaces, 7 or more letters</span>
+            <input id="title" name="biztitle" pattern="[A-Za-z -]+" minlength="7" required> 
+
+            <label for="email">Email *:</label>
+            <input id="email" name="email" type="email" placeholder="name@domain.com" required>
+
+            <label for="phone">Phone *:</label>
+            <input id="phone" name="phone" type="tel" placeholder="000-0000-0000" required>
+
+            <label for="business">Business Name *:</label>
+            <input id="business" name="bizname" required>
+
+            <label for="member">Enter your level of membership</label>
+            <div id="radio">
+                <input id="member" id='one' name="mlevel" type='radio' required>
+                <label for="one">Level 1</label>
+
+                <input id="member" id='two' name="mlevel" type='radio' required>
+                <label for="two">Level 2</label>
+
+                <input id="member" id='three' name="mlevel" type='radio' required>
+                <label for="three">Level 3</label>
+
+                <input id="member" id='four' name="mlevel" type='radio' required>
+                <label for="four">Level 4</label>
+            </div>
+            <label for="message">Business Description:</label>
+            <textarea id="message"></textarea>
+            <input id="date" type="hidden" name="todaydate">
+            <input type="submit" value="Join the Chamber" src="thankyou.html" >
+        </form>
+        <div id="memberinfo">
+            <h2>Membership Levels</h2>
+            <h3>NP Membership</h3>
+            <ul>
+                <li>
+                    For non profit organizations and there is no fee
+                </li>
+            </ul>
+
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>
+                    15% discount on events
+                </li>
+                <li>
+                    10% discount on advertising
+                </li>
+                <li>
+                    Fee of $50/month
+                </li>
+            </ul>
+
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>
+                    25% discount on events
+                </li>
+                <li>
+                    15% discount on advertising
+                </li>
+                <li>
+                    Free participation in the trade fair
+                </li>
+                <li>
+                    Fee of $100/month
+                </li>
+            </ul>
+
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>
+                    50% discount on events
+                </li>
+                <li>
+                    50% discount on advertising
+                </li>
+                <li>
+                    Free participation in the trade fair
+                </li>
+                <li>
+                    5 free featured ads per year
+                </li>
+                <li>
+                    1 free training per quarter
+                </li>
+                <li>
+                    Fee of $250/month
+                </li>
+            </ul>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="top">
+            <img id="logo-footer" class="logo" src="images/merida_logo.jpeg" alt="Logo Merida">
+            <div>
+                <h3>Merida Chamber of Commerce</h3><p>Calle 60 Merida, Yucatan, Mx</p>
+            </div>
+            <div class="mail">
+                <p><a href="mailto:merida@yucatan.com">info@merida.org</a></p>
+                <a target="_blank" href="https://goo.gl/maps/RbVHfPeTeMk2TbLN6">&#128205;</a>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <p>&copy; Chamber Project | Valentina Sumano</p>
+            <p>WDD 230 | Last Updated: <span class="updated"></span></p>
+        </div>
+    </footer>
+    <script src="styles/chamber.js"></script>
+</body>
+</html>

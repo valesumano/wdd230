@@ -10,6 +10,8 @@ header {
 
 }
 
+
+
 .gallery{
     max-width: 300px;
     align-items: center;
@@ -192,6 +194,17 @@ main div {
         display:none;
     }
 
+    #join_content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+   
+    span {
+    font-size: 20px;
+    }
  }
 
 
@@ -203,6 +216,14 @@ main div {
     nav ul li{
         display: flex;
     }
+
+    #join_content{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
 
     .gallery:hover{
         box-shadow: 0 0 50px #333;
@@ -269,6 +290,13 @@ main div {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto auto;
     }
+
+    #join_content{
+        flex-direction: row;
+        margin-left: 80px;
+    }
+
+
 
     .gallery:hover{
         box-shadow: 0 0 50px #333;

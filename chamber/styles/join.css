@@ -1,0 +1,81 @@
+label, input{
+    display:block;
+    font-size: 1.5em;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    height: 44px;
+}
+
+input[type='radio']{
+
+    height: 20px;
+}
+form input:required {
+    border-left: red solid 6 px;
+}
+
+form input:required:valid {
+    border-left: green solid 6 px;
+}
+
+#radio{
+    display: grid;
+    grid-template-columns: 60px 100px;
+   
+}
+
+#radio label, #radio input{
+    margin: 0;
+}
+
+textarea{
+    height: 150px;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+#join_content{
+    display:flex;
+    width: 90%;
+    margin: auto;
+}
+
+input[type='submit']{
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgb(35,121,150);
+    color: white;
+}
+
+
+ /* medium view */
+@media (min-width: 750px) {
+
+    #memberinfo{
+        flex-direction: column; 
+    }
+
+    #memberinfo, ul, li{
+        flex-direction: column;
+    }
+}
+
+/* large view */
+
+@media (min-width: 1000px) {
+    #memberinfo{
+        margin-left: 100px;
+       
+    }
+}
+    
