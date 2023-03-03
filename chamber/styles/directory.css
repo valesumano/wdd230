@@ -1,0 +1,56 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+h1, h2{
+    text-align: center;
+    color: brown
+}
+
+section{
+    border: 1px solid gray;
+    background-color: antiquewhite;
+    padding: 30px;
+    width: 300px;
+    margin: 20px;
+}
+
+.cards img{
+    width: 90%;
+    box-shadow: 5px 5px 8px 2px gray;
+}
+
+#cards #list{
+    padding: 0 8px;
+    cursor: pointer;
+
+}
+
+#view{
+    text-align: center;
+    font-size: 3em;
+}
+
+table{
+    width: 75%;
+    margin: 50px auto;
+    font-size: 1.2em;
+}
+
+td{
+    padding: 5px;
+    display:block;
+    /* display: table-cell; */
+     /*media query use display: table-cell*/
+}
+
+tr:nth-of-type(even) {
+    background-color: antiquewhite;
+}
+
+table a {
+    color: navy;
+}

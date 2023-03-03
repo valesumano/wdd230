@@ -2,65 +2,65 @@
   "businesses": [
       {
           "name": "BEMSA",
-          "type": "Health",
+          "address": "32 341, SAN PEDRO UXMAL , MERIDA , YUC",
           "phone": "5591385600",
-          "email": "a.maldonado@bmsa.mx",
+          "website": "a.maldonado@bmsa.mx",
           "image": "bmsa.png"
       },
       {
           "name": "3XPERTIUS",
           "type": "Telecommunication",
           "phone": "9999867875",
-          "email": "solucionesaclientes@3xpertius.com.mx",
+          "website": "solucionesaclientes@3xpertius.com.mx",
           "image": "3xpertus.png"
       },
       {
         "name": "ABSOLUT PC",
-        "type": "Education",
+        "address": "32 341, SAN PEDRO UXMAL , MERIDA , YUC",
         "phone": "9999243101",
-        "email": "ventas@absolutpc.com.mx",
+        "website": "ventas@absolutpc.com.mx",
         "image": "absolut.png"
       },
       {
         "name": "AITELECOM",
-        "type": "Telecommunication",
+        "address": "32 341, SAN PEDRO UXMAL , MERIDA , YUC",
         "phone": "9999201200",
-        "email": "cfierros@aitelecom.net",
+        "website": "cfierros@aitelecom.net",
         "image": "aitelecom.png"
       },
       {
         "name": "APCO NETWORKS",
-        "type": "Finance",
+        "address": "32 341, SAN PEDRO UXMAL , MERIDA , YUC",
         "phone": " 9999201200",
-        "email": "cfierros@aitelecom.net",
+        "website": "cfierros@aitelecom.net",
         "image": "apco.png"
       },
       {
         "name": "BLUE OCEAN",
         "type": "Government",
         "phone": "9999261020",
-        "email": "info@blueoceantech.com.mx",
+        "website": "info@blueoceantech.com.mx",
         "image": "blueocean.png"
       },
       {
         "name": "CARDINAL",
-        "type": "Finance",
+        "address": "32 341, SAN PEDRO UXMAL , MERIDA , YUC",
         "phone": "9993748130",
-        "email": "glendy.dominguez@cardinal-bi.com.mx",
+        "website": "glendy.dominguez@cardinal-bi.com.mx",
         "image": "cardinal.png"
       },
       {
         "name": "DINERCAP",
-        "type": "Finance",
+        "address": "32 341, SAN PEDRO UXMAL , MERIDA , YUC",
         "phone": "9999410241",
-        "email": "servicioalcliente@dinercap.com",
+        "website": "servicioalcliente@dinercap.com",
         "image": "dinercap.png"
       },
       {
         "name": "EASY REZ",
-        "type": "Hotels and Restaurants",
+        "address": "32 341, SAN PEDRO UXMAL , MERIDA , YUC",
         "phone": "9996889458",
-        "email": "soporte@easy-rez.com",
+        "website": "soporte@easy-rez.com",
         "image": "easyrez.png"
       }
   

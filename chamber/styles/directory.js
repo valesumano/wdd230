@@ -1,4 +1,4 @@
-const requestURL = 'https://andejuli.github.io/wint22/chamber/week9/data.json';
+const requestURL = 'https://valesumano.github.io/wdd230/chamber/styles/data.json';
 
 function showCards(){
     let row = document.querySelectorAll('tr');
@@ -37,7 +37,7 @@ function showCards(){
         let website  = document.createElement('p');
         website.textContent = `Website: ${business.website}`;
         let img = document.createElement('img');
-        let image_path = `images/${business.image}`
+        let image_path = `directory_images/${business.image}`
         img.setAttribute('src', image_path);
         img.setAttribute('alt', `${business.name} logo`);
         
