@@ -1,70 +1,127 @@
-const src = 'styles/data.json';
+const requestURL = 'https://andejuli.github.io/wint22/chamber/week9/data.json';
 
-async function getProphetData() {
-    const response = await fetch(url);
-    console.log(response);
-    const data = await response.json();
-    console.table(data.prophets);  // note that we reference the prophet array of the data object given the structure of the json file
-    displayTable(data.prophets);
-  }
-  
-  getProphetData();
-
-  const displayProphets = (prophets) => {
-    const cards = document.querySelector('div.cards'); // select the output container element
-  
-    prophets.forEach((prophet) => {
-      // Create elements to add to the div.cards element
-      let card = document.createElement('section');
-      let h2 = document.createElement('h2');
-      let portrait = document.createElement('img');
-  
-      // Build the h2 content out to show the prophet's full name - finish the template string
-      h2.textContent = `${prophet.name} ${prophet.lastname}`;
-  
-      // Build the image portrait by setting all the relevant attribute
-      portrait.setAttribute('src', prophet.imageurl);
-      portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
-  
-      // Append the section(card) with the created elements
-      card.appendChild(h2);
-      card.appendChild(portrait);
-  
-      cards.appendChild(card);
-    } // end of forEach loop
-  )} // end of function expression
-
-  function displayTable(prophets){
-
+function showCards(){
     let row = document.querySelectorAll('tr');
-      row.forEach((item)=>{
-          item.remove();
-      })
+    row.forEach((item) => {
+        item.remove();
+    });
+
     let section = document.querySelectorAll('section');
-      section.forEach((item)=>{
-          item.remove();
-      })
+        section.forEach((item) => {
+        item.remove();
+    });
 
-
-
-    prophets.forEach((prophet)=> {
-      let tr = document.createElement('tr');
-      let td_name = document.createElement('td');
-      let td_birthplace = document.createElement('td');
-      let td_birthdate = document.createElement('td');
-
-      td_name.textContent = `${prophet.name} ${prophet.lastname}`;
-      td_birthplace.textContent = prophet.birthplace;
-      td_birthdate.textContent = prophet.birthdate;
-
-      tr.appendChild(td_name);
-      tr.appendChild(td_birthplace);
-      tr.appendChild(td_birthdate);
-
-      document.querySelector('table').appendChild(tr);
-
-
+    fetch(requestURL)
+    .then((response)=> {
+        if(response.ok){
+            return response.json();
+        } else {
+            alert('Data not Available');
+        }
     })
+    .then(function (jsonObject) {
+        console.table(jsonObject);  
+        const business = jsonObject['businesses'];
+        business.forEach(displayBusinessCards);
+    });
 
+    function displayBusinessCards(business) {  
+        let cards = document.querySelector('.cards');
+        cards.setAttribute('style', 'grid-template-columns: 2fr 1fr 1fr 1fr;');
+
+        let card = document.createElement('section') 
+        let address = document.createElement('p');
+        address.textContent = `Address: ${business.address}`
+        let phone  = document.createElement('p');
+        phone.textContent = `Phone: ${business.phone}`;
+        let website  = document.createElement('p');
+        website.textContent = `Website: ${business.website}`;
+        let img = document.createElement('img');
+        let image_path = `images/${business.image}`
+        img.setAttribute('src', image_path);
+        img.setAttribute('alt', `${business.name} logo`);
+        
+        card.appendChild(img); 
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+        
+        document.querySelector('div.cards').appendChild(card);
+        
+        
+    }
+    
+}
+
+
+function showList(){
+    let section = document.querySelectorAll('section');
+        section.forEach((item) => {
+            item.remove();
+    });
+    
+    let row = document.querySelectorAll('tr');
+        row.forEach((item) => {
+        item.remove();
+    });
+    fetch(requestURL)
+    .then((response)=> {
+        if(response.ok){
+            return response.json();
+        } else {
+            alert('Data not Available');
+        }
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject);  
+        const business = jsonObject['businesses'];
+        business.forEach(displayBusinessList);
+    });
+
+    function displayBusinessList(business) { 
+
+        let list_row = document.createElement('tr');
+        let td_name = document.createElement('td');
+        td_name.textContent = `${business.name}`;
+
+        let td_address = document.createElement('td');
+        td_address.textContent = `${business.address}`;
+
+        let td_number = document.createElement('td');
+        td_number.textContent = `${business.phone}`;
+
+        let td_web = document.createElement('td');
+        let web_p = document.createElement('a')
+        web_p.setAttribute('href', business.website);
+        web_p.textContent = `${business.website}`;
+
+        td_web.appendChild(web_p)
+        list_row.appendChild(td_name)
+        list_row.appendChild(td_address)
+        list_row.appendChild(td_number)
+        list_row.appendChild(td_web)
+        document.querySelector('table').appendChild(list_row);
+
+     }
+}
+
+showCards();
+
+let cards = document.querySelector('#cards');
+cards.addEventListener('click', showCards);
+
+let list = document.querySelector('#list');
+list.addEventListener('click', showList);
+
+
+function reportWindowSize() {
+  if (window.innerWidth > 900 && window.innerWidth < 1100) {
+      showList();
+  } else {
+      showCards();
   }
+  console.log(window.innerWidth);
+}
 
+window.addEventListener('resize', reportWindowSize);
+window.addEventListener('load', reportWindowSize);
