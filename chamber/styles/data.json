@@ -1,88 +1,68 @@
 {
   "businesses": [
       {
-          "name": "Crandall Misken & Morris",
-          "address": "3954 17th St",
-          "phone": "208 345-1241",
-          "website": "crandallco.com",
-          "image": "crandall.png"
+          "name": "BEMSA",
+          "type": "Health",
+          "phone": "5591385600",
+          "email": "a.maldonado@bmsa.mx",
+          "image": "bmsa.png"
       },
       {
-          "name": "Conectate Assistance",
-          "address": "350 N 45th",
-          "phone": "208 529-3412",
-          "website": "conectate-ammon.org",
-          "image": "conectate.png"
+          "name": "3XPERTIUS",
+          "type": "Telecommunication",
+          "phone": "9999867875",
+          "email": "solucionesaclientes@3xpertius.com.mx",
+          "image": "3xpertus.png"
       },
       {
-          "name": "Commercial Cleaning",
-          "address": "3409 Hitt Rd",
-          "phone": "208 522-4916",
-          "website": "commercialclean.com",
-          "image": "commercialcleaning.png"
+        "name": "ABSOLUT PC",
+        "type": "Education",
+        "phone": "9999243101",
+        "email": "ventas@absolutpc.com.mx",
+        "image": "absolut.png"
       },
       {
-          "name": "Bank of Idaho",
-          "address": "3451 Sunnyside",
-          "phone": "208 525-2525",
-          "website": "bankofidaho.org",
-          "image": "bankofid.png"
+        "name": "AITELECOM",
+        "type": "Telecommunication",
+        "phone": "9999201200",
+        "email": "cfierros@aitelecom.net",
+        "image": "aitelecom.png"
       },
       {
-          "name": "Yard Butler",
-          "address": "453 Windsor",
-          "phone": "208 453-2921",
-          "website": "yard-butler.com",
-          "image": "yardbutler.png"
+        "name": "APCO NETWORKS",
+        "type": "Finance",
+        "phone": " 9999201200",
+        "email": "cfierros@aitelecom.net",
+        "image": "apco.png"
       },
       {
-          "name": "Generations Insurance",
-          "address": "450 Ammon Rd",
-          "phone": "208 529-9090",
-          "website": "gen-insurance.com",
-          "image": "generations.png"
+        "name": "BLUE OCEAN",
+        "type": "Government",
+        "phone": "9999261020",
+        "email": "info@blueoceantech.com.mx",
+        "image": "blueocean.png"
       },
       {
-          "name": "Alpha Group",
-          "address": "342 45th",
-          "phone": "208 520-1500",
-          "website": "alpha.com",
-          "image": "alphagroup.png"
+        "name": "CARDINAL",
+        "type": "Finance",
+        "phone": "9993748130",
+        "email": "glendy.dominguez@cardinal-bi.com.mx",
+        "image": "cardinal.png"
       },
       {
-          "name": "EIRMC",
-          "address": "435 Hitt Rd",
-          "phone": "208 522-2000",
-          "website": "eirmc.org",
-          "image": "eirmc.png"
+        "name": "DINERCAP",
+        "type": "Finance",
+        "phone": "9999410241",
+        "email": "servicioalcliente@dinercap.com",
+        "image": "dinercap.png"
       },
       {
-          "name": "Eco of Idaho",
-          "address": "988 17th St",
-          "phone": "208 520-1298",
-          "website": "ecoidaho.com",
-          "image": "eco.png"
-      },
-      {
-          "name": "Farm Bureau Insurance",
-          "address": "2900 John Adams",
-          "phone": "208 522-7856",
-          "website": "fbinsurance.org",
-          "image": "farmbureau.png"
-      },
-      {
-          "name": "America's SBDC Idaho",
-          "address": "45th and 1500 N",
-          "phone": "208 529-9988",
-          "website": "sbdc.org",
-          "image": "sbdc.png"
-      },
-      {
-          "name": "Teton Valley Concrete",
-          "address": "301 S Ammon Rd",
-          "phone": "208 551-5487",
-          "website": "tetonconcrete.com",
-          "image": "tetonvalley.png"
+        "name": "EASY REZ",
+        "type": "Hotels and Restaurants",
+        "phone": "9996889458",
+        "email": "soporte@easy-rez.com",
+        "image": "easyrez.png"
       }
+  
   ]
 }
