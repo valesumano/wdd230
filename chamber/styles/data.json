@@ -1,0 +1,88 @@
+{
+  "businesses": [
+      {
+          "name": "Crandall Misken & Morris",
+          "address": "3954 17th St",
+          "phone": "208 345-1241",
+          "website": "crandallco.com",
+          "image": "crandall.png"
+      },
+      {
+          "name": "Conectate Assistance",
+          "address": "350 N 45th",
+          "phone": "208 529-3412",
+          "website": "conectate-ammon.org",
+          "image": "conectate.png"
+      },
+      {
+          "name": "Commercial Cleaning",
+          "address": "3409 Hitt Rd",
+          "phone": "208 522-4916",
+          "website": "commercialclean.com",
+          "image": "commercialcleaning.png"
+      },
+      {
+          "name": "Bank of Idaho",
+          "address": "3451 Sunnyside",
+          "phone": "208 525-2525",
+          "website": "bankofidaho.org",
+          "image": "bankofid.png"
+      },
+      {
+          "name": "Yard Butler",
+          "address": "453 Windsor",
+          "phone": "208 453-2921",
+          "website": "yard-butler.com",
+          "image": "yardbutler.png"
+      },
+      {
+          "name": "Generations Insurance",
+          "address": "450 Ammon Rd",
+          "phone": "208 529-9090",
+          "website": "gen-insurance.com",
+          "image": "generations.png"
+      },
+      {
+          "name": "Alpha Group",
+          "address": "342 45th",
+          "phone": "208 520-1500",
+          "website": "alpha.com",
+          "image": "alphagroup.png"
+      },
+      {
+          "name": "EIRMC",
+          "address": "435 Hitt Rd",
+          "phone": "208 522-2000",
+          "website": "eirmc.org",
+          "image": "eirmc.png"
+      },
+      {
+          "name": "Eco of Idaho",
+          "address": "988 17th St",
+          "phone": "208 520-1298",
+          "website": "ecoidaho.com",
+          "image": "eco.png"
+      },
+      {
+          "name": "Farm Bureau Insurance",
+          "address": "2900 John Adams",
+          "phone": "208 522-7856",
+          "website": "fbinsurance.org",
+          "image": "farmbureau.png"
+      },
+      {
+          "name": "America's SBDC Idaho",
+          "address": "45th and 1500 N",
+          "phone": "208 529-9988",
+          "website": "sbdc.org",
+          "image": "sbdc.png"
+      },
+      {
+          "name": "Teton Valley Concrete",
+          "address": "301 S Ammon Rd",
+          "phone": "208 551-5487",
+          "website": "tetonconcrete.com",
+          "image": "tetonvalley.png"
+      }
+  ]
+}

@@ -22,3 +22,35 @@ section{
     width: 90%;
     box-shadow: 5px 5px 8px 2px gray;
 }
+
+#cards #list{
+    padding: 0 8px;
+    cursor: pointer;
+
+}
+
+#view{
+    text-align: center;
+    font-size: 3em;
+}
+
+table{
+    width: 75%;
+    margin: 50px auto;
+    font-size: 1.2em;
+}
+
+td{
+    padding: 5px;
+    display:block;
+    /* display: table-cell; */
+     /*media query use display: table-cell*/
+}
+
+tr:nth-of-type(even) {
+    background-color: antiquewhite;
+}
+
+table a {
+    color: navy;
+}
