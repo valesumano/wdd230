@@ -54,3 +54,22 @@ tr:nth-of-type(even) {
 table a {
     color: navy;
 }
+
+#directory{
+    display: block;
+}
+
+main div {
+    padding: 0px;
+    border: solid #243579 1px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+
+@media only screen and (min-width: 600px){
+    td{
+        display: table-cell;
+         /*media query use display: table-cell*/
+    }
+}
