@@ -46,11 +46,11 @@
         <!-- <p>Have a great day!</p> -->
         <div id="hero">
             <picture class="photo">
-                <source id="merida" srcset="images/Monumento/Small-03.jpg" media= '(max-width: 600px)'>
-                <source id="merida" srcset="images/Monumento/Medium-02.jpg" media= '(max-width: 750px)'>
-                <source id="merida" srcset="images/Monumento/Large-01.jpg" media= '(max-width: 1000px)'>
+                <source id="merida" srcset="images/hero/images-03.png" media= '(max-width: 600px)'>
+                <source id="merida" srcset="images/hero/images-02.png" media= '(max-width: 750px)'>
+                <source id="merida" srcset="images/hero/images-01.png" media= '(max-width: 1000px)'>
             
-                <img id="merida" src="images/Monumento/Large-01.jpg" alt="monumento en merida">
+                <img id="merida" src="images/hero/images-02.png" alt="monumento en merida">
         </picture>
             <h3 class="welcome">Welcome to Merida</h3>
             <a href="" class="btn">Join the Chamber</a>
@@ -64,10 +64,10 @@
         
         <div id="weather">
             <h3>Weather</h3>
-            <p class="temp"><span class="t"></span>&#176;F </p>
-            <p class="desc"></p>
-            <img src="images/weather.png" class="clouds" alt="cloudy icon">
-            <p>Wind Speed: <span class="ws"></span>km/h</p>
+            <img id="weather_icon" src='' alt="weather icon" class="clouds"/>
+            <h3 id="temp"><span id='t' class="t"></span>°F</h3>
+            <p id='condition'></p>
+            <p>WindSpeed: <span id='ws' class="ws"></span>mph</p>
             <p>Wind Chill: <span class="wc">N/A</span></p>
 
         </div>
@@ -111,7 +111,7 @@
 
         <div id="bottom">
             <p>&copy; Chamber Project | Valentina Sumano</p>
-            <p>WDD 230 | Last Updated: <span class="updated"></span></p>
+            <p>WDD 230 | Last Updated: <span class="updated2"></span></p>
         </div>
     </footer>
     <script src="styles/chamber.js"></script>

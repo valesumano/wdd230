@@ -11,13 +11,6 @@ header {
 }
 
 
-
-.gallery{
-    max-width: 300px;
-    align-items: center;
-}
-
-
 .active a{
     display: block;
 }
@@ -187,6 +180,13 @@ main div {
     display: block;
 }
 
+.gallery{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
 
  /* small view */
  @media (max-width: 750px) {
