@@ -5,14 +5,14 @@
     justify-content: center;
 }
 
-h1, h2{
+
+/* h1, h2{
     text-align: center;
     color: brown
-}
+} */
 
 section{
-    border: 1px solid gray;
-    background-color: antiquewhite;
+    background-color: white;
     padding: 30px;
     width: 300px;
     margin: 20px;
@@ -24,20 +24,13 @@ section{
 }
 
 
-span{
-    padding: 0 8px;
+#view_box{
     cursor: pointer;
-    align-items: center;
-    display: block;
-    width: 80px;
-    height: 80px;
     font-size: 40px;
-
     background: #e80a7b;
     border-radius: 25px;
     padding: 10px 20px;
-    margin: 20px 0px;
-    box-sizing: border-box;
+    margin: 50px 50px;
     text-decoration: none;
     color: white;
     box-shadow: 2px 6px 10px rgb(200,200,200); */
@@ -64,7 +57,7 @@ td{
 }
 
 tr:nth-of-type(even) {
-    background-color: antiquewhite;
+    background-color: #efdfe8;
 }
 
 table a {
@@ -73,11 +66,11 @@ table a {
 
 #directory{
     display: block;
+  
 }
 
 main div {
     padding: 0px;
-    border: solid #243579 1px;
     margin: 10px;
     border-radius: 50px;
 }

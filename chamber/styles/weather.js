@@ -22,6 +22,9 @@ const getWeather = async () => {
     let windchill = document.querySelector('#wc');
     if (temp <= 50 && ws >= 3) {
     windchill.textContent = chill;
+    }
+    else {
+      document.getElementById('wc').textContent = "N/A ";
 }
   };
 getWeather();

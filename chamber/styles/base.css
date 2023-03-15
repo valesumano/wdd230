@@ -157,11 +157,11 @@ div{
     object-position: center;
 }
 
-main{
+#home{
     padding: 40px;
 }
 
-main div {
+#home div {
     padding: 40px;
     border: solid #243579 1px;
     margin: 10px;
@@ -182,9 +182,12 @@ main div {
 
 .gallery{
     max-width: 300px;
+   
+}
+
+.discover{
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: center;
 }
 
@@ -229,7 +232,7 @@ main div {
         box-shadow: 0 0 50px #333;
     }
 
-    main{
+    #home{
         display:grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -285,7 +288,7 @@ main div {
   /* large view */
 
   @media (min-width: 1000px) {
-    main{
+    #home{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto auto;

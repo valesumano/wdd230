@@ -1,10 +1,8 @@
-// select the elements to manipulate (output to)
-const datefield = document.querySelector(".date");
+//Last Updated
 
-// derive the current date using a date object
 let currentdate = document.lastModified;
 
-document.querySelector('.updated2').textContent = currentdate;
+document.querySelector('.updated').textContent = currentdate;
 
 
 var d = new Date();
@@ -17,10 +15,14 @@ var year = d.getFullYear();
 
 const date = dayOfWeek + ", " + day + " " + month + " " + year;
 
-document.querySelector('.updated').innerHTML = date;
+//Date on top
+
+document.querySelector('.date').innerHTML = date;
 
 const realDayofWeek = d.getDay();
 
+//Banner
+const banner = document.getElementById('banner');
 
 if (realDayofWeek === 1 || realDayofWeek === 2) {
     banner.style.display = "block";
@@ -36,34 +38,6 @@ const hambutton = document.querySelector('.ham');
 hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('active');
 })
-
-
-//Banner
-
-const date = new Date();
-const dayOfWeek = date.getDay();
-const banner = document.querySelector('.banner');
-
-if(dayOfWeek === 1 || dayOfWeek === 2){
-    banner.style.display = 'block';
-
-} 
-else {
-    banner.style.display = 'none';
-}
-
-
-
-//Weather calculator
-const temp = document.querySelector('.t').textContent;
-const ws = document.querySelector('.ws').textContent;
-
-let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(ws,0.16)) + (0.4275*temp*Math.pow(ws,0.16)));
-
-let windchill = document.querySelector('.wc');
-if (temp <= 50 && ws >= 3) {
-    windchill.textContent = chill;
-}
 
 
 //storage local and session
