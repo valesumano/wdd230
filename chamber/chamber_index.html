@@ -17,7 +17,7 @@
         <img src="images/merida_logo.webp" class="logo" alt="Logo Merida">
         <nav id="nav">
             <ul class="nav">
-                <a class="ham" href="#">&#9776;</a>
+                <li class="ham" href="#">&#9776;</li>
                 <li><a class="menu" href="chamber_index.html">Home</a></li>
                 <li><a class="menu" href="discover.html">Discover</a></li>
                 <li><a class="menu" href="directory.html">Directory</a></li>
@@ -45,11 +45,11 @@
         <!-- <p>Have a great day!</p> -->
         <div id="hero">
             <picture class="photo">
-                <source id="merida" srcset="images/hero/images-03.png" media= '(max-width: 600px)'>
-                <source id="merida" srcset="images/hero/images-02.png" media= '(max-width: 750px)'>
-                <source id="merida" srcset="images/hero/images-01.png" media= '(max-width: 1000px)'>
+                <source class="merida" srcset="images/hero/images-03.png" media= '(max-width: 600px)'>
+                <source class="merida" srcset="images/hero/images-02.png" media= '(max-width: 750px)'>
+                <source class="merida" srcset="images/hero/images-01.png" media= '(max-width: 1000px)'>
             
-                <img id="merida" src="images/hero/images-02.png" alt="monumento en merida">
+                <img class="merida" src="images/hero/images-02.png" alt="monumento en merida">
         </picture>
             <h3 class="welcome">Welcome to Merida</h3>
             <a href="" class="btn">Join the Chamber</a>
@@ -63,7 +63,7 @@
         
         <div id="weather">
             <h3>Weather</h3>
-            <img id="weather_icon" src='' alt=""/>
+            <img id="weather_icon" alt="weather-icon"/>
             <h3 id="temp"><span id='t'></span>°F</h3>
             <p id='condition'></p>
             <p>WindSpeed: <span id='ws'></span>mph</p>
