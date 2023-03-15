@@ -51,10 +51,13 @@ input, textarea{
 }
 
 input[type='submit']{
-    height: 80px;
-    border-radius: 10px;
-    background-color: rgb(35,121,150);
+    cursor: pointer;
+    background: #e80a7b;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
     color: white;
+    box-shadow: 2px 6px 10px rgb(200,200,200);
 }
 
 
@@ -65,7 +68,7 @@ input[type='submit']{
         flex-direction: column; 
     }
 
-    #memberinfo, ul, li{
+    #memberinfo, .info, li{
         flex-direction: column;
     }
 }
