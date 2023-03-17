@@ -21,8 +21,18 @@ document.querySelector('.date').innerHTML = date;
 
 const realDayofWeek = d.getDay();
 
+//Hamburger Menu
+const mainnav = document.querySelector('.nav');
+const hambutton = document.querySelector('.ham');
+
+hambutton.addEventListener('click', () => {
+    console.log('test');
+    mainnav.classList.toggle('responsive');
+    hambutton.classList.toggle('responsive');
+})
+
 //Banner
-const banner = document.getElementById('banner');
+const banner = document.querySelector('.banner');
 
 if (realDayofWeek === 1 || realDayofWeek === 2) {
     banner.style.display = "block";
@@ -31,24 +41,10 @@ if (realDayofWeek === 1 || realDayofWeek === 2) {
 }
 
 
-//Hamburger Menu
-const mainnav = document.querySelector('#nav');
-const hambutton = document.querySelector('.ham');
 
-hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('active');
-})
 
 
 //storage local and session
 
 localStorage.setItem('name', 'Valentina Sumano - Permanent');
 sessionStorage.setItem('class', 'WDD230 - not permanent');
-
-
-
-
-
-
-
-

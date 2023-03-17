@@ -24,13 +24,28 @@ section{
 }
 
 
-#view_box{
+#cards{
     cursor: pointer;
     font-size: 40px;
     background: #e80a7b;
     border-radius: 25px;
     padding: 10px 20px;
-    margin: 50px 50px;
+    margin-left: 50px;
+
+    text-decoration: none;
+    color: white;
+    box-shadow: 2px 6px 10px rgb(200,200,200); 
+
+
+}
+
+#list{
+    cursor: pointer;
+    font-size: 40px;
+    background: #e80a7b;
+    border-radius: 25px;
+    padding: 10px 20px;
+    /* margin: 50px 50px; */
     text-decoration: none;
     color: white;
     box-shadow: 2px 6px 10px rgb(200,200,200); 

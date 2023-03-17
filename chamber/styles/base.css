@@ -7,6 +7,7 @@ header {
 	max-width: 1200px;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
+    height: 200px;
 
 }
 
@@ -47,6 +48,7 @@ nav a:hover {
     transition: all .5s ease;
     width: 100px;
 	color: white;
+    text-align: center;
 
     padding: .8em .8em;
     box-sizing: border-box;
@@ -176,7 +178,7 @@ div{
     display: block;
 }
 
-.responsive, a {
+.responsive a {
     display: block;
 }
 
@@ -194,7 +196,7 @@ div{
  /* small view */
  @media (max-width: 750px) {
     .menu{
-        display:none;
+        display: none;
     }
 
     #join_content {
@@ -208,6 +210,15 @@ div{
     span {
     font-size: 20px;
     }
+
+    footer{
+        display: block;
+     }
+
+     #weather_icon{
+        width: 100px;
+     }
+    
  }
 
 
