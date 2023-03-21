@@ -31,6 +31,6 @@ function clear(event) {
     location.reload()
 }
 
-document.querySelector('.freshInfo').innerHTML = `${numDrinks}`
-document.querySelector('.copyright').innerHTML = `Copyright ${year} | Jake Edwards`
+document.querySelector('.drinks').innerHTML = `${numDrinks}`
+document.querySelector('.copyright').innerHTML = `Copyright ${year} | Valentina Sumano`
 document.querySelector('.modified').innerHTML = `Last Modified: ${modifiedDate}`

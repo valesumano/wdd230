@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&family=Syne:wght@400;600;800&display=swap');
+
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'BioRhyme', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
 }
 
-h1 {
-    margin: 0;
+.logo{
+    width: 200px;
 }
+
 
 p {
     font-weight: 300;
@@ -25,7 +28,7 @@ header {
     justify-content: center;
 }
 
-header h1 {
+header {
     padding-right: 40px;
     border-right: 1px solid gray;
 }
@@ -37,23 +40,26 @@ header ul {
     margin-left: 40px;
 }
 
-header li a {
+header ul {
     text-decoration: none;
-    color: black;
+    color: #186a72;
     font-size: 1.2rem;
 }
 
-header li {
+nav {
+    text-decoration: none;
+}
+
+header ul {
     align-self: center;
     text-decoration: none;
 }
 
 header li :hover {
-    text-decoration: underline;
-    color: #64829b;
+    color: #68c3a2;
 }
 
-#homepage_fruit {
+#hero {
     max-width:100%;
 }
 
@@ -81,7 +87,7 @@ header li :hover {
     font-size: 1.5em;
 }
 
-.freshInfo {
+.drinks {
     margin: 20px;
 }
 
@@ -135,7 +141,7 @@ footer div {
         text-align: center;
         padding: 0;
     }
-    header h1 {
+    header {
         border: none;
         padding: 0;
     }
@@ -150,7 +156,7 @@ footer div {
     .card {
         margin: 0 auto;
     }
-    #homepage_fruit {
+    #hero {
         margin-top: 100px;
     }
     .info {
