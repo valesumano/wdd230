@@ -164,7 +164,7 @@ p {
     }
 
 	nav a {
-		font-size: 1.1rem;
+		font-size: .5rem;
 	}
 	main {
 		grid-template-columns: 1fr 1fr 1fr;

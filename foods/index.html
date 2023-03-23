@@ -6,31 +6,23 @@
     <title>Bountiful Foods</title>
     
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base.js">
+
 
     </head>
 
 
 <body>
     <header>
-        <img src="imagenes/logo-03.jpg" class="logo" alt="Logo Bountiful Foods">
-        <ul>
-            <li>
-                <a class='nav' href="index.html">
-                    home
-                </a>
-            </li>
-            <li>
-                <a class='nav' href="fresh.html">
-                    fresh
-                </a>
-            </li>
-            <li>
-                <a class='nav' href="about.html">
-                    about us
-                </a>
-            </li>
-        </ul>
+        <div class="navbar">
+            <img src="imagenes/logo-03.jpg" class="logo" alt="Logo Bountiful Foods">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -39,23 +31,26 @@
         <div class="content">
             <div class="card">
                 <p>
-                    </p><h2>Carlsbad California</h2>
+                    <h2>Carlsbad California</h2>
                     <br>
                     Carlsbad, California is a coastal city located in San Diego County, known for its beautiful beaches, upscale shopping, and a variety of outdoor recreational activities. It is also home to a vibrant organic and locally grown food scene, making it the perfect location for Bountiful Foods.
                 </p>
             </div>
             <div class="card">
-                <h3 class="description">Weather</h3>
-                <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="icon" srcset="" id="weather-icon">
-                <h1 class="temperature">62.71 °F</h1>
-                <h3 class="humidity">Humidity: 78%</h3>
+              
+                <h3>Weather</h3>
+            <img id="weather_icon" src='' alt="weather-icon"/>
+            <h3 id="temp"><span id='t'></span>°F</h3>
+            <p id='condition'></p>
+            <p>WindSpeed: <span id='ws'></span>mph</p>
+
                 <br>
-                <p class="forecast">
-            <u><h3>3 Day Forecast (Day)</h3></u>
-            Day 1: 62.71°F <br>
-            Day 2: 61.36°F <br>
-            Day 3: 59.54°F <br>
-        </p>
+             <h3>3 Day Forecast (Day)</h3>
+                    <p>Day 1 High: <span class="high1">  </span> Day 1 Low: <span class="low1"></span></p>
+                    <p>Day 2 High: <span class="high2">  </span> Day 2 Low: <span class="low2"></span></p>
+                    <p>Day 2 High: <span class="high3">  </span> Day 2 Low: <span class="low3"></span></p>
+
+
             </div>
             <div class="card">
                 <p>
@@ -72,31 +67,31 @@
     </main>
 
     <footer>
-        <div class="directions">
+        <div>
             <b>Directions</b>
             <p>
-                <a href="https://www.google.com/maps" target="_blank">
-                    521 Forest Ave, Laguna Beach, CA 92651
+                <a href="https://www.google.com/maps">
+                    5625 Paseo Del Norte, Carlsbad, CA 92008
                 </a>
             </p>
-        </div>
-        <div class="business_information">
-            <a href="./pages/attributions.html">Attributions</a>
+            <br>
+            <br>
             <p class="copyright">Copyright 2023 | Valentina Sumano</p>
-            <p class="modified">Last Modified:</p>
+            <p class="updated">Last Updated:</p>
             <br>
             <br>
-            <a href="https://www.facebook.com/" target="_blank"><img src="./images/icons8-facebook-48.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./images/icons8-instagram-48.png" alt="instagram"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="./images/icons8-twitter-48.png" alt="twitter"></a>
-            <a href="https://www.wechat.com/us/" target="_blank"><img src="./images/icons8-wechat-48.png" alt="wechat"></a>
+            <a href="https://www.facebook.com/" class="icon"><img src="imagenes/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" class="icon"><img src="imagenes/instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/" class="icon"><img src="imagenes/twitter.png" alt="twitter"></a>
         </div>
         <div class="contact">
             <b>Contact Us</b>
             <p>Email: support@bountifulfoods.com</p>
-            <p>Phone: (555) 555-5555</p>
+            <p>Phone: (760) 987-3457</p>
             <p>(Mon - Sat 9:00AM - 5:00PM)</p>
         </div>
     </footer>
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+    <script src="styles/base.js"></script>
+</body>
+</html>
