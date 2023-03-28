@@ -102,6 +102,7 @@ p {
     width: 280px;
 }
 
+
 .card h2 {
     font-size: 1.5em;
 }
@@ -156,6 +157,11 @@ footer img{
     width: 30px;
 }
 
+
+.checkbox1{
+    white-space: nowrap;
+    margin: 20px auto;
+}
 
 /* Medium Screen */
 
