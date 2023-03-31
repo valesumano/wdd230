@@ -56,3 +56,20 @@ const getWeather = async () => {
 
   };
 getWeather();
+
+
+//Num of drinks
+
+let displaydrinks=localStorage.getItem('numdrinks');
+document.querySelector('.drinks').textContent = displaydrinks;
+
+//clear button
+
+// document.querySelector('#clear').addEventListener('click').textContent = 0;
+
+document.querySelector("#clear").addEventListener("click", clear);
+
+function clear(event) {
+    localStorage.clear()
+    location.reload()
+}

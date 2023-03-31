@@ -163,6 +163,10 @@ footer img{
     margin: 20px auto;
 }
 
+#fruit1, #fruit2, #fruit3{
+    display: inline-block;
+}
+
 /* Medium Screen */
 
 @media screen and (max-width: 750px) {

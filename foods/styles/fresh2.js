@@ -25,50 +25,121 @@ async function fetFruit() {
     document.getElementById('fruit2').innerText = fruit2.name
     document.getElementById('fruit3').innerText = fruit3.name
 
-    // select the output container element
   
     data.forEach(() => {
-      // Create elements to add to the div.cards element
-    //   let card = document.createElement('p');
-    
-      // Build the h2 content out to show the prophet's full name - finish the template string
-    //   card.textContent = `${data.name}`;
 
-
-    //   cards.appendChild(card);
     })
   }
 
 
-// const fruitsJSON = 'https://andejuli.github.io/wdd230/fruit.json'
 
-// // Get the select element
-// const selectElement = document.getElementById("fruit1");
+//Last Updated
 
-// // Fetch the fruit options from the JSON file
-// fetch("https://andejuli.github.io/wdd230/fruit.json")
+let currentdate = document.lastModified;
+
+document.querySelector('.updated').textContent = currentdate;
+
+
+var d = new Date();
+var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var dayOfWeek = daysOfWeek[d.getDay()];
+var day = d.getDate();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var month = months[d.getMonth()];
+var year = d.getFullYear();
+
+const date = dayOfWeek + ", " + day + " " + month + " " + year;
+
+
+//Submition
+
+
+
+
+// const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+// const fruitUrl = 'https://andejuli.github.io/wdd230/fruit.json';
+// const fetchPromise = fetch(proxyUrl + fruitUrl)
 //   .then(response => response.json())
 //   .then(data => {
-//     inputElements.forEach(inputElement => {
-//         // Set up the autocomplete functionality
-//         new autoComplete({
-//           selector: inputElement,
-//           data: {
-//             src: data.fruit,
-//           },
+//     const fruit = data.find(f => f.name === checkbox.value);
+//     if (fruit) {
+//       // update total nutrition information
+//     }
+//   })
+//   .catch(error => console.log(error));
+
+
+// function submitForm(event) {
+//   event.preventDefault();
+//   const date = new Date();
+//   const orderDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+//   let numDrinks = localStorage.getItem('numDrinks') || 0;
+
+//   const eachCheckbox = document.getElementsByName('checkbox');
+//   const allMarkedBoxes = [];
+//   let totalCarbs = 0;
+//   let totalProtein = 0;
+//   let totalFat = 0;
+//   let totalSugar = 0;
+//   let totalCalories = 0;
+
+//   const fetchPromises = [];
+
+//   for (const checkbox of eachCheckbox) {
+//     if (checkbox.checked) {
+//       allMarkedBoxes.push(checkbox.value);
+//       const fetchPromise = fetch('https://andejuli.github.io/wdd230/fruit.json')
+//         .then((response) => {
+//           if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//           }
+//           return response.json();
+//         })
+//         .then((data) => {
+//           const fruit = data.find((f) => f.name === checkbox.value);
+//           if (fruit) {
+//             totalCarbs += fruit.nutritions.carbohydrates;
+//             totalProtein += fruit.nutritions.protein;
+//             totalFat += fruit.nutritions.fat;
+//             totalSugar += fruit.nutritions.sugar;
+//             totalCalories += fruit.nutritions.calories;
+//           } else {
+//             throw new Error(`Could not find nutrition information for ${checkbox.value}`);
+//           }
+//         })
+//         .catch((error) => {
+//           console.error(error);
+//           alert(`An error occurred while fetching nutrition information for ${checkbox.value}: ${error.message}`);
 //         });
-//       });
-//     });
-    
-    
-    
-    // Loop through the fruit options and add them to the select element
-//     data.name.forEach(fruit => {
-//       const optionElement = document.createElement("option");
-//       optionElement.value = fruit;
-//       optionElement.text = fruit;
-//       selectElement.appendChild(optionElement);
-//     });
-//   });
+//       fetchPromises.push(fetchPromise);
+//     }
+//   }
 
-
+//   Promise.allSettled(fetchPromises).then(() => {
+//     document.querySelector('.summary').innerHTML = `
+//       <br>
+//       <h2>Form Values:</h2>
+//       <hr>
+//       <p>First Name: ${event.target.elements.fname.value}</p>
+//       <p>Email: ${event.target.elements.email.value}</p>
+//       <p>Phone Number: ${event.target.elements.phone.value}</p>
+//       <p>Fruits: ${allMarkedBoxes.join(', ')}</p>
+//       <p>Special Instructions: ${event.target.elements.instructions.value}</p>
+//       <br>
+//       <h2>Nutrition Information</h2>
+//       <hr>
+//       <p>Carbohydrates: ${totalCarbs.toFixed(2)}</p>
+//       <p>Protein: ${totalProtein.toFixed(2)}</p>
+//       <p>Fat: ${totalFat.toFixed(2)}</p>
+//       <p>Sugar: ${totalSugar.toFixed(2)}</p>
+//       <p>Calories: ${totalCalories.toFixed(2)}</p>
+//       <br>
+//       <i>
+//           <p>Order Date: ${orderDate}</p
+//           <p>Drink Mixes Ordered: ${numDrinks}</p>
+//           </i>
+//         `
+//   })
+    
+//       localStorage.setItem(0, numDrinks);
+//     }
